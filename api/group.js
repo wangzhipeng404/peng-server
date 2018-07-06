@@ -1,9 +1,9 @@
-const User = require('../model/user');
+const Group = require('../model/group');
 
-const add = (info) => {
-  return new Promise((reslove, reject) => {
-    const user = new User({username: info.username, openid: info.openid, friends: [], groups: []})
-    user.save((err, res) => {
+const add = data => {
+  return new Promise((resovel, reject) => {
+    const group = new Group({name: data.name, friends: [data.user_id]})
+    group.save((err, res) => {
       if (err) {
         reslove({status: 'fail', data: err})
       } else {
@@ -15,12 +15,8 @@ const add = (info) => {
 
 const find = (query) => {
   return new Promise((reslove, reject) => {
-    User
-      .find(
-        {
-          username: query.username,
-        }
-      )
+    Group
+      .find(query)
       .exec((err, res) => {
         if (err) {
           reslove({status: 'fail', data: err})
@@ -33,10 +29,10 @@ const find = (query) => {
 
 const get = (query) => {
   return new Promise((reslove, reject) => {
-    User
+    Group
       .findOne(
         {
-          username: query.username,
+          _id: query.id,
         }
       )
       .exec((err, res) => {
