@@ -25,6 +25,8 @@
     "koa-views": "^5.2.1",
     "mongoose": "^5.1.7",
     "pug": "^2.0.0-rc.1",
+    "qiniu": "^7.2.1",
+    "request": "^2.87.0",
     "runkoa": "^1.5.9",
     "socket.io": "^2.1.1"
   },

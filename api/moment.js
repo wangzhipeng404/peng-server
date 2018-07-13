@@ -1,9 +1,9 @@
-const Group = require('../model/group');
+const Moment = require('../model/moment');
 
 const add = data => {
   return new Promise((reslove, reject) => {
-    const group = new Group({ ...data })
-    group.save((err, res) => {
+    const moment = new Moment({ ...data })
+    moment.save((err, res) => {
       if (err) {
         reslove({status: 'fail', data: err})
       } else {
@@ -15,7 +15,7 @@ const add = data => {
 
 const find = (query) => {
   return new Promise((reslove, reject) => {
-    Group
+    Moment
       .find(query)
       .exec((err, res) => {
         if (err) {
@@ -29,7 +29,7 @@ const find = (query) => {
 
 const get = (query) => {
   return new Promise((reslove, reject) => {
-    Group
+    Moment
       .findOne(
         {
           ...query,

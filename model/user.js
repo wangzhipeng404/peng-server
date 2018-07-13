@@ -3,7 +3,13 @@ const mongoose = require('../db/mongoose');
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-  username: String,
+  nickName: String,
+  avatarUrl: String,
+  country: String,
+  province: String,
+  city: String,
+  language: String,
+  gender: Number,
   openid: String,
   crate_time: {
     type: Date,

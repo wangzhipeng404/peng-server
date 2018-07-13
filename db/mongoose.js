@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 // const DB_URL = 'mongodb://localhost:27017/peng';
-const DB_URL = require('../dbconfig');
+const appConfig = require('../appConfig');
 
-mongoose.connect(DB_URL);
+mongoose.connect(appConfig.DB_URL);
 
 mongoose
   .connection
   .on('connected', () => {
-    console.log('Mongoose connection open to ' + DB_URL);
+    console.log('Mongoose connection open to ' + appConfig.DB_URL);
   });
 
 mongoose

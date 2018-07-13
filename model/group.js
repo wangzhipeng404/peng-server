@@ -3,8 +3,10 @@ const mongoose = require('../db/mongoose');
 const Schema = mongoose.Schema;
 
 const GroupSchema = new Schema({
-  name: String,
-  _id: String,
+  nickName: String,
+  avatarUrl: String,
+  intro: String,
+  creator: String,
   crate_time: {
     type: Date,
     default: Date.now,

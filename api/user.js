@@ -2,7 +2,7 @@ const User = require('../model/user');
 
 const add = (info) => {
   return new Promise((reslove, reject) => {
-    const user = new User({username: info.username, openid: info.openid, friends: [], groups: []})
+    const user = new User({nickName: info.nickName, openid: info.openid, friends: [], groups: []})
     user.save((err, res) => {
       if (err) {
         reslove({status: 'fail', data: err})
@@ -18,7 +18,7 @@ const find = (query) => {
     User
       .find(
         {
-          username: query.username,
+          ...query,
         }
       )
       .exec((err, res) => {
@@ -36,16 +36,23 @@ const get = (query) => {
     User
       .findOne(
         {
-          username: query.username,
+          ...query,
         }
       )
       .exec((err, res) => {
         if (err) {
-          reslove({status: 'fail', data: err})
+          reslove(err)
         } else {
-          reslove({status: 'success', data: res})
+          reslove(res)
         }
       })
+  })
+}
+
+const update = (id, query) => {
+  return User.update({ _id: id }, { ...query },{
+    upsert: true,
+    safe: true
   })
 }
 
@@ -53,4 +60,5 @@ module.exports = {
   add,
   find,
   get,
+  update,
 }
