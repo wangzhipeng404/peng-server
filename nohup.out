@@ -1,0 +1,181 @@
+
+> peng-server@0.1.0 start /root/peng-server
+> node bin/run
+
+3babel presets path = /root/peng-server/node_modules/runkoa/node_modules
+(node:1095) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connection open to mongodb://admin:admin1024@localhost/admin
+
+> peng-server@0.1.0 start /root/peng-server
+> node bin/run
+
+3babel presets path = /root/peng-server/node_modules/runkoa/node_modules
+(node:1124) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Mongoose connection open to mongodb://admin:admin1024@localhost/admin
+koa:sess=1531477145755-14q-Hfm4P1H49ukt_wgpGqQ8knRjJKq_; koa:sess.sig=na5-zcbeI8ijBKneIBXbR8VTf0c;
+koa:sess=1531477145755-14q-Hfm4P1H49ukt_wgpGqQ8knRjJKq_; koa:sess.sig=na5-zcbeI8ijBKneIBXbR8VTf0c;
+koa:sess=1531477169860-LrRL1KnLVVzA6E8x9iV3-jZrIEWOFn7M; koa:sess.sig=GFJ3RJi3dPn1AxMNZ0FV_LA-RYg;
+koa:sess=1531477169860-LrRL1KnLVVzA6E8x9iV3-jZrIEWOFn7M; koa:sess.sig=GFJ3RJi3dPn1AxMNZ0FV_LA-RYg;
+koa:sess=1531477967440-u7j8vDla6Yt4OD-nAzao0OlrA6WKHQjl; koa:sess.sig=D3HnX7Y7RIQln38JmQmmLPJxU04;
+koa:sess=1531477967440-u7j8vDla6Yt4OD-nAzao0OlrA6WKHQjl; koa:sess.sig=D3HnX7Y7RIQln38JmQmmLPJxU04;
+koa:sess=1531477967440-u7j8vDla6Yt4OD-nAzao0OlrA6WKHQjl; koa:sess.sig=D3HnX7Y7RIQln38JmQmmLPJxU04;
+koa:sess=1531477967440-u7j8vDla6Yt4OD-nAzao0OlrA6WKHQjl; koa:sess.sig=D3HnX7Y7RIQln38JmQmmLPJxU04;
+koa:sess=1531477967440-u7j8vDla6Yt4OD-nAzao0OlrA6WKHQjl; koa:sess.sig=D3HnX7Y7RIQln38JmQmmLPJxU04;
+koa:sess=1531477967440-u7j8vDla6Yt4OD-nAzao0OlrA6WKHQjl; koa:sess.sig=D3HnX7Y7RIQln38JmQmmLPJxU04;
+koa:sess=1531477967440-u7j8vDla6Yt4OD-nAzao0OlrA6WKHQjl; koa:sess.sig=D3HnX7Y7RIQln38JmQmmLPJxU04;
+koa:sess=1531477967440-u7j8vDla6Yt4OD-nAzao0OlrA6WKHQjl; koa:sess.sig=D3HnX7Y7RIQln38JmQmmLPJxU04;
+koa:sess=1531486400353-nDSpaVOjO9o2_jzxoaka5_A2m1Eyix3i; koa:sess.sig=olF_0XsAd-coQDdwhyPuEL448LA;
+koa:sess=1531486400353-nDSpaVOjO9o2_jzxoaka5_A2m1Eyix3i; koa:sess.sig=olF_0XsAd-coQDdwhyPuEL448LA;
+koa:sess=1531486468534-8sBo_7eeBA6NgXTw-6PIQuhrOptOM4XA; koa:sess.sig=4m8qO2dWFCy4FkdOVxg9DjFI9ho;
+koa:sess=1531486468534-8sBo_7eeBA6NgXTw-6PIQuhrOptOM4XA; koa:sess.sig=4m8qO2dWFCy4FkdOVxg9DjFI9ho;
+koa:sess=1531665739528-UZU7ASNcHlCiq15Rpxl-eQRJ-HX4I1Ig; koa:sess.sig=52X0s3ne22Pr_TLDs1Z2SccYM4I;
+koa:sess=1531665739528-UZU7ASNcHlCiq15Rpxl-eQRJ-HX4I1Ig; koa:sess.sig=52X0s3ne22Pr_TLDs1Z2SccYM4I;
+koa:sess=1531665739528-UZU7ASNcHlCiq15Rpxl-eQRJ-HX4I1Ig; koa:sess.sig=52X0s3ne22Pr_TLDs1Z2SccYM4I;
+koa:sess=1531665739528-UZU7ASNcHlCiq15Rpxl-eQRJ-HX4I1Ig; koa:sess.sig=52X0s3ne22Pr_TLDs1Z2SccYM4I;
+koa:sess=1531712396844-_S-n3o1hIlWvhdw1keK1akBMlpFts0F3; koa:sess.sig=o3xZh4lK0DC9ujekS9IEJQ-p4pA;
+koa:sess=1531712396844-_S-n3o1hIlWvhdw1keK1akBMlpFts0F3; koa:sess.sig=o3xZh4lK0DC9ujekS9IEJQ-p4pA;
+koa:sess=1531712636047-plRz5wqnUJh8dQDBBHeaaA2xOob8hEXB; koa:sess.sig=1X55Uzgfi6ZQaxSuizFGF6FxBoI;
+koa:sess=1531712636047-plRz5wqnUJh8dQDBBHeaaA2xOob8hEXB; koa:sess.sig=1X55Uzgfi6ZQaxSuizFGF6FxBoI;
+koa:sess=1531712692984-o5cRXu1nErco_Kswwf8e-wV1gX9bAKsk; koa:sess.sig=8x4SDjR_mJTMzJtSwl8dLsL1cVg;
+koa:sess=1531712692984-o5cRXu1nErco_Kswwf8e-wV1gX9bAKsk; koa:sess.sig=8x4SDjR_mJTMzJtSwl8dLsL1cVg;
+koa:sess=1531712803530-vm7VjhTbBGAkkrWd1zDftitQRM_jeuzp; koa:sess.sig=RR9Re-4PvHKzcii4wyZ0JFW_OOU;
+koa:sess=1531712803530-vm7VjhTbBGAkkrWd1zDftitQRM_jeuzp; koa:sess.sig=RR9Re-4PvHKzcii4wyZ0JFW_OOU;
+koa:sess=1531714141654-EUBy36lEWBAa1f8C1BHrzGrKHVivfiGN; koa:sess.sig=UZFvnE8OO53Oe9Of0QTKxCqePZg;
+koa:sess=1531714141654-EUBy36lEWBAa1f8C1BHrzGrKHVivfiGN; koa:sess.sig=UZFvnE8OO53Oe9Of0QTKxCqePZg;
+koa:sess=1531714203144-i9uLk7X7RV9P7OJZR9R_JhXXZl9jmdJa; koa:sess.sig=EZZ2yzZuO-7QQqZhyhN1TsgJbx4;
+koa:sess=1531714203144-i9uLk7X7RV9P7OJZR9R_JhXXZl9jmdJa; koa:sess.sig=EZZ2yzZuO-7QQqZhyhN1TsgJbx4;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714317690-wHzTYu7kL9pQfvwtLluBoAK-VXNVG2bc; koa:sess.sig=VuP_AxIv3KYfgWg8qwkPK7q8c0g;
+koa:sess=1531714317690-wHzTYu7kL9pQfvwtLluBoAK-VXNVG2bc; koa:sess.sig=VuP_AxIv3KYfgWg8qwkPK7q8c0g;
+koa:sess=1531714792570-kFjs9BbpvM4f4yTa8DZ6651l63jbTFcg; koa:sess.sig=UgzXzy9EyepxEJ9CjIR59Iw147U;
+koa:sess=1531714792570-kFjs9BbpvM4f4yTa8DZ6651l63jbTFcg; koa:sess.sig=UgzXzy9EyepxEJ9CjIR59Iw147U;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531714232027-VMgANHTPbOv4WZmdxTBx5cftKCC1EZAD; koa:sess.sig=3e8p6oO4lOaXjRgz8p-y-KdcmLE;
+koa:sess=1531800477917-1WFpOkts6V-uoAxKUY6lC3zsQc3VdHO4; koa:sess.sig=twk7xtodsYo5-3fJ8q0qaosh4Ww;
+koa:sess=1531800477917-1WFpOkts6V-uoAxKUY6lC3zsQc3VdHO4; koa:sess.sig=twk7xtodsYo5-3fJ8q0qaosh4Ww;
+koa:sess=1531800498071-GwA4MfF_Lswg9Fnh6IsHu9GHk3JvGU78; koa:sess.sig=nw6mAJfP7YakYzsPy4zRWGAIBqM;
+koa:sess=1531800498071-GwA4MfF_Lswg9Fnh6IsHu9GHk3JvGU78; koa:sess.sig=nw6mAJfP7YakYzsPy4zRWGAIBqM;
+koa:sess=1531800477917-1WFpOkts6V-uoAxKUY6lC3zsQc3VdHO4; koa:sess.sig=twk7xtodsYo5-3fJ8q0qaosh4Ww;
+koa:sess=1531800477917-1WFpOkts6V-uoAxKUY6lC3zsQc3VdHO4; koa:sess.sig=twk7xtodsYo5-3fJ8q0qaosh4Ww;
+koa:sess=1531814236790-1uFX5zzzmopWdoN_-z4C-3Tq6dI-WPLs; koa:sess.sig=SLkr0C7P4IeYDKOZXpoKhB05fJ0;
+koa:sess=1531814236790-1uFX5zzzmopWdoN_-z4C-3Tq6dI-WPLs; koa:sess.sig=SLkr0C7P4IeYDKOZXpoKhB05fJ0;
+koa:sess=1531814319059-7wmIdmqa5yzzui6HQLfUOzI6n0vGPbAB; koa:sess.sig=oP6Qk2CSJ0ZXb7umNxKe1wruxRQ;
+koa:sess=1531814319059-7wmIdmqa5yzzui6HQLfUOzI6n0vGPbAB; koa:sess.sig=oP6Qk2CSJ0ZXb7umNxKe1wruxRQ;
+koa:sess=1531814335588-sC_rISTS_nmIWG9DzpZcNmfE9SMbdKQW; koa:sess.sig=3aNPUKHP4S0qNY10WUKYgerJqEI;
+koa:sess=1531814335588-sC_rISTS_nmIWG9DzpZcNmfE9SMbdKQW; koa:sess.sig=3aNPUKHP4S0qNY10WUKYgerJqEI;
+koa:sess=1531814588055-1q6g5KSBheF4zp25dEqLnPxt1aKCj854; koa:sess.sig=cAkGI269eSOJAljQE7nyoVbAaxM;
+koa:sess=1531814588055-1q6g5KSBheF4zp25dEqLnPxt1aKCj854; koa:sess.sig=cAkGI269eSOJAljQE7nyoVbAaxM;
+koa:sess=1531814615433-dL2TQwDVm2CyNCclAwV0vsYFTUxd1vr5; koa:sess.sig=kprlJvTFSpPFoulMRePFJPnoGd4;
+koa:sess=1531814615433-dL2TQwDVm2CyNCclAwV0vsYFTUxd1vr5; koa:sess.sig=kprlJvTFSpPFoulMRePFJPnoGd4;
+koa:sess=1531814640820-A0sRMSzx4yeSNOCBOETN-JZaItwmNUoc; koa:sess.sig=hFTJq1W4MxiCgsLCK8H63WvoXDY;
+koa:sess=1531814640820-A0sRMSzx4yeSNOCBOETN-JZaItwmNUoc; koa:sess.sig=hFTJq1W4MxiCgsLCK8H63WvoXDY;
+koa:sess=1531814335588-sC_rISTS_nmIWG9DzpZcNmfE9SMbdKQW; koa:sess.sig=3aNPUKHP4S0qNY10WUKYgerJqEI;
+koa:sess=1531814335588-sC_rISTS_nmIWG9DzpZcNmfE9SMbdKQW; koa:sess.sig=3aNPUKHP4S0qNY10WUKYgerJqEI;
+koa:sess=1531814669431-6w17UhG3esfWiw_IwyZ9suWAHSBBWYtA; koa:sess.sig=z4cYtTyvf7LmpCShHoTVyBBJd9I;
+koa:sess=1531814669431-6w17UhG3esfWiw_IwyZ9suWAHSBBWYtA; koa:sess.sig=z4cYtTyvf7LmpCShHoTVyBBJd9I;
+koa:sess=1531814725019-_UMr3zXCWk0qMHX9vh2CsF62jqodCtiP; koa:sess.sig=WMFybdx6hfoEZj_vO3ob1Dixi7c;
+koa:sess=1531814725019-_UMr3zXCWk0qMHX9vh2CsF62jqodCtiP; koa:sess.sig=WMFybdx6hfoEZj_vO3ob1Dixi7c;
+koa:sess=1531814669431-6w17UhG3esfWiw_IwyZ9suWAHSBBWYtA; koa:sess.sig=z4cYtTyvf7LmpCShHoTVyBBJd9I;
+koa:sess=1531814669431-6w17UhG3esfWiw_IwyZ9suWAHSBBWYtA; koa:sess.sig=z4cYtTyvf7LmpCShHoTVyBBJd9I;
+koa:sess=1531814746807-vKRvuBPRfyaTs4eYMdwITMc21AAbl5qQ; koa:sess.sig=g6UDrc7l38TDGKCDhPaJSadXnRo;
+koa:sess=1531814746807-vKRvuBPRfyaTs4eYMdwITMc21AAbl5qQ; koa:sess.sig=g6UDrc7l38TDGKCDhPaJSadXnRo;
+koa:sess=1531814778537-xoJA7YV7_DxCfA2dbSUCRph-HCMpwJTA; koa:sess.sig=1V9Ok9OV8RgqGrAYpCOU--xsKUg;
+koa:sess=1531814778537-xoJA7YV7_DxCfA2dbSUCRph-HCMpwJTA; koa:sess.sig=1V9Ok9OV8RgqGrAYpCOU--xsKUg;
+koa:sess=1531814792512-ey3uuRZsL2mySd5PqIp0IwH5FAgawBJT; koa:sess.sig=_q6nRmBxdMou7AAeW-sVPp3ohT4;
+koa:sess=1531814792512-ey3uuRZsL2mySd5PqIp0IwH5FAgawBJT; koa:sess.sig=_q6nRmBxdMou7AAeW-sVPp3ohT4;
+koa:sess=1531814895294-3fofPGXBS1FBuS9at3m9WuyPVnGi80rj; koa:sess.sig=ZgGqZms0nGtT83Gc1w9TVCkTmZ4;
+koa:sess=1531814895294-3fofPGXBS1FBuS9at3m9WuyPVnGi80rj; koa:sess.sig=ZgGqZms0nGtT83Gc1w9TVCkTmZ4;
+koa:sess=1531814792512-ey3uuRZsL2mySd5PqIp0IwH5FAgawBJT; koa:sess.sig=_q6nRmBxdMou7AAeW-sVPp3ohT4;
+koa:sess=1531814792512-ey3uuRZsL2mySd5PqIp0IwH5FAgawBJT; koa:sess.sig=_q6nRmBxdMou7AAeW-sVPp3ohT4;
+koa:sess=1531814909103-6CQQObh1NJOcPW-hWX3t9E3ZwWXDD7Qg; koa:sess.sig=sn7vmRzB8_l6IYpkVXyIRGSrbfw;
+koa:sess=1531814909103-6CQQObh1NJOcPW-hWX3t9E3ZwWXDD7Qg; koa:sess.sig=sn7vmRzB8_l6IYpkVXyIRGSrbfw;
+koa:sess=1531814963941-puvTEMp1DtE4I8FZc7ebblBCQmy10Nky; koa:sess.sig=hvV-KoP0L02yyCnVTtIWPCfDV0Y;
+koa:sess=1531814963941-puvTEMp1DtE4I8FZc7ebblBCQmy10Nky; koa:sess.sig=hvV-KoP0L02yyCnVTtIWPCfDV0Y;
+koa:sess=1531815040934-frMWxjdBuVjh0-DfN-Z1hLfXZDBqBPsE; koa:sess.sig=RwFbaJG8H92dVXtgAz0yp9CNXxM;
+koa:sess=1531815040934-frMWxjdBuVjh0-DfN-Z1hLfXZDBqBPsE; koa:sess.sig=RwFbaJG8H92dVXtgAz0yp9CNXxM;
+koa:sess=1531815104996-bnyhFiFY6f7HStubwn5j4_jJx25O3MsU; koa:sess.sig=oIUQTLyl5yZrancOF2qJ0P_-SFc;
+koa:sess=1531815104996-bnyhFiFY6f7HStubwn5j4_jJx25O3MsU; koa:sess.sig=oIUQTLyl5yZrancOF2qJ0P_-SFc;
+koa:sess=1531815128844-BeFLAuic2wOvjAgPe6db36YHxDFxBYzm; koa:sess.sig=-nwFmS5mYxDAtha00czSUyZWmXE;
+koa:sess=1531815128844-BeFLAuic2wOvjAgPe6db36YHxDFxBYzm; koa:sess.sig=-nwFmS5mYxDAtha00czSUyZWmXE;
+koa:sess=1531815178415-hI_R9ugUsJsDGT2TNoYsN58VUataSHry; koa:sess.sig=-MWyBh-hmQo81SnUPpypgHWeF-s;
+koa:sess=1531815178415-hI_R9ugUsJsDGT2TNoYsN58VUataSHry; koa:sess.sig=-MWyBh-hmQo81SnUPpypgHWeF-s;
+koa:sess=1531815248434-8nVIpc7TZPS2rIf0HPOCmmWO99LN0RrY; koa:sess.sig=5vW4UoXhdQCLhNZEBeGrbZMY7fU;
+koa:sess=1531815248434-8nVIpc7TZPS2rIf0HPOCmmWO99LN0RrY; koa:sess.sig=5vW4UoXhdQCLhNZEBeGrbZMY7fU;
+koa:sess=1531815277207-NkdgwPfuZleHfpI0xctpK7XuRR7l41Cj; koa:sess.sig=lDRQ65xnTWRDorP4eut5IhpmjzU;
+koa:sess=1531815277207-NkdgwPfuZleHfpI0xctpK7XuRR7l41Cj; koa:sess.sig=lDRQ65xnTWRDorP4eut5IhpmjzU;
+koa:sess=1531815305421-ciV60dpJGVKhdWMNrM688TsR8dWUE_S7; koa:sess.sig=f1cKL2f_HJTG8XEs88yELrV4qWs;
+koa:sess=1531815305421-ciV60dpJGVKhdWMNrM688TsR8dWUE_S7; koa:sess.sig=f1cKL2f_HJTG8XEs88yELrV4qWs;
+koa:sess=1531815347114-NuInDjP5GZRTa2_7ln3lYvT5dOsBZZaX; koa:sess.sig=_QI2HitLEjdxjfagZuDzT0WSCYw;
+koa:sess=1531815347114-NuInDjP5GZRTa2_7ln3lYvT5dOsBZZaX; koa:sess.sig=_QI2HitLEjdxjfagZuDzT0WSCYw;
+koa:sess=1531815379532--LGHF7YKcQkpAeufsmMR3-O9k7G6cHKs; koa:sess.sig=2h8Msxo9LfLUfTnOMmlexxk2n18;
+koa:sess=1531815379532--LGHF7YKcQkpAeufsmMR3-O9k7G6cHKs; koa:sess.sig=2h8Msxo9LfLUfTnOMmlexxk2n18;
+koa:sess=1531815404519-bkewM7KzL2pChD2bTBjUpp9mkwWaU3ZB; koa:sess.sig=rqMwHpvdyLS3GmvNqC1DqG9_T2M;
+koa:sess=1531815404519-bkewM7KzL2pChD2bTBjUpp9mkwWaU3ZB; koa:sess.sig=rqMwHpvdyLS3GmvNqC1DqG9_T2M;
+koa:sess=1531815435989-phZBrQgd59tDn9Y4tBaAYoTGyV_b2bAJ; koa:sess.sig=M6fLsk5-Oyo2zKPg2dFl4jII8FU;
+koa:sess=1531815435989-phZBrQgd59tDn9Y4tBaAYoTGyV_b2bAJ; koa:sess.sig=M6fLsk5-Oyo2zKPg2dFl4jII8FU;
+koa:sess=1531815459926-_44HN1Ju-R6MTHSI8B3IHiLekS4tshUV; koa:sess.sig=pDmLtt8ePGtOUuSorqhith3BWr8;
+koa:sess=1531815459926-_44HN1Ju-R6MTHSI8B3IHiLekS4tshUV; koa:sess.sig=pDmLtt8ePGtOUuSorqhith3BWr8;
+koa:sess=1531815523711-oHzkyzoXhk3IqnnaMwdL5vbeVMZEi16-; koa:sess.sig=XcZm702W0jcNWKCW-15zX0pLdEo;
+koa:sess=1531815523711-oHzkyzoXhk3IqnnaMwdL5vbeVMZEi16-; koa:sess.sig=XcZm702W0jcNWKCW-15zX0pLdEo;
+koa:sess=1531815550808-AeEa-vQJB9c5BRIeq2SvtB5CmsqKzK9i; koa:sess.sig=oC5CH0eYbxzH1iytBrrm3FIUaI8;
+koa:sess=1531815550808-AeEa-vQJB9c5BRIeq2SvtB5CmsqKzK9i; koa:sess.sig=oC5CH0eYbxzH1iytBrrm3FIUaI8;
+koa:sess=1531815572783-2yoQtgMeORhmeYl61RdS_COWkvq3xuIX; koa:sess.sig=abuV6eqSzQL683s3Pjs2VfvBqz8;
+koa:sess=1531815572783-2yoQtgMeORhmeYl61RdS_COWkvq3xuIX; koa:sess.sig=abuV6eqSzQL683s3Pjs2VfvBqz8;
+koa:sess=1531814909103-6CQQObh1NJOcPW-hWX3t9E3ZwWXDD7Qg; koa:sess.sig=sn7vmRzB8_l6IYpkVXyIRGSrbfw;
+koa:sess=1531814909103-6CQQObh1NJOcPW-hWX3t9E3ZwWXDD7Qg; koa:sess.sig=sn7vmRzB8_l6IYpkVXyIRGSrbfw;
+koa:sess=1531815606018-ds1sHTw2DTfQLhMStmR-nZ7AV0tCWAYA; koa:sess.sig=ulfu2_fBKfWhgIwQMTzwOnOuqJQ;
+koa:sess=1531815606018-ds1sHTw2DTfQLhMStmR-nZ7AV0tCWAYA; koa:sess.sig=ulfu2_fBKfWhgIwQMTzwOnOuqJQ;
+koa:sess=1531816437398-Lv7vplhdcCRTZuAtoVEkvRNYmDcoC3ZB; koa:sess.sig=4IPYTfk1spSYQex_8dCW-7TWPIc;
+koa:sess=1531816437398-Lv7vplhdcCRTZuAtoVEkvRNYmDcoC3ZB; koa:sess.sig=4IPYTfk1spSYQex_8dCW-7TWPIc;
+koa:sess=1531816478928-kEiXatQBHhpvLwzDXZ1VXacc7xtWkSbe; koa:sess.sig=NRKpmGGvoUOz2fsPwSJWjNORYn8;
+koa:sess=1531816478928-kEiXatQBHhpvLwzDXZ1VXacc7xtWkSbe; koa:sess.sig=NRKpmGGvoUOz2fsPwSJWjNORYn8;
+koa:sess=1531816537920-rIaT-8T6rXFNt0DAItnWOXAdUzl5zNfR; koa:sess.sig=GH_AbMLrbmzrX0VJIt5sV_Pyjng;
+koa:sess=1531816537920-rIaT-8T6rXFNt0DAItnWOXAdUzl5zNfR; koa:sess.sig=GH_AbMLrbmzrX0VJIt5sV_Pyjng;
+koa:sess=1531816673640-BGgJ4h47rp_tFNDK6ZDkXxER_4dtuhDc; koa:sess.sig=er_CjKkCc9t3RH6atDGk84XaiRE;
+koa:sess=1531816673640-BGgJ4h47rp_tFNDK6ZDkXxER_4dtuhDc; koa:sess.sig=er_CjKkCc9t3RH6atDGk84XaiRE;
+koa:sess=1531816684313-6Bvy_az3bI4fZTCPaxxtpiopPuduNVkz; koa:sess.sig=g_1-I0FERQQucRBiqPWlz-hwrZI;
+koa:sess=1531816684313-6Bvy_az3bI4fZTCPaxxtpiopPuduNVkz; koa:sess.sig=g_1-I0FERQQucRBiqPWlz-hwrZI;
+koa:sess=1531816739803-Y-sfsYEgQuW7ogddQ49O8-Vgg55ar_LT; koa:sess.sig=FZKsBe855VF2ZTWVumhepBg18D8;
+koa:sess=1531816739803-Y-sfsYEgQuW7ogddQ49O8-Vgg55ar_LT; koa:sess.sig=FZKsBe855VF2ZTWVumhepBg18D8;
+koa:sess=1531816925411-EdflHrFmko-OUJzPTrYaFosRKJ0NuuBs; koa:sess.sig=oKAoVrWJCrEycV6lNof1HmsD6FQ;
+koa:sess=1531816925411-EdflHrFmko-OUJzPTrYaFosRKJ0NuuBs; koa:sess.sig=oKAoVrWJCrEycV6lNof1HmsD6FQ;
+koa:sess=1531817035825-0YvJhNQU4ANnuUVx1Ym1Jn9deslp6dCr; koa:sess.sig=ROjG2h294EEddL3PbkSv0a97Mic;
+koa:sess=1531817035825-0YvJhNQU4ANnuUVx1Ym1Jn9deslp6dCr; koa:sess.sig=ROjG2h294EEddL3PbkSv0a97Mic;
+koa:sess=1531817062821-N_K1Qbi7QhPq_o2GT9Ku3luN32hnmkHK; koa:sess.sig=ESz_3GWEHcT0arbuc9pw5JUWEUg;
+koa:sess=1531817062821-N_K1Qbi7QhPq_o2GT9Ku3luN32hnmkHK; koa:sess.sig=ESz_3GWEHcT0arbuc9pw5JUWEUg;
+koa:sess=1531817219886-ELgQ2018hceRvKOVkAeOmMBP2yYtCsSp; koa:sess.sig=_VsEQq-v8GhJPciRK-SEpKph8b8;
+koa:sess=1531817219886-ELgQ2018hceRvKOVkAeOmMBP2yYtCsSp; koa:sess.sig=_VsEQq-v8GhJPciRK-SEpKph8b8;
+Terminated
+npm ERR! code ELIFECYCLE
+npm ERR! errno 143
+npm ERR! peng-server@0.1.0 start: `node bin/run`
+npm ERR! Exit status 143
+npm ERR! 
+npm ERR! Failed at the peng-server@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2018-07-17T08_59_13_914Z-debug.log

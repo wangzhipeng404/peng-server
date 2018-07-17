@@ -1,6 +1,7 @@
 const SessionStore = require('../model/sessionStore');
 
 function getCookie(cookies, name) {
+   console.log(cookies);
   if (cookies.length > 0) {
     let begin = cookies.indexOf(name + "=");
     if (begin != -1) {
@@ -15,7 +16,7 @@ function getCookie(cookies, name) {
 }
 
 function getSessionData (conn) {
-  const cookies = conn.request.headers.cookie
+  const cookies = conn.handshake.query.cookie
   const koaSessionId = getCookie(cookies, 'koa:sess')
   return SessionStore.get(koaSessionId)
 }

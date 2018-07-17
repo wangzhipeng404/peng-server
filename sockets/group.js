@@ -15,7 +15,6 @@ const group = async socket => {
     })
   })
   socket.on('chat', msg => {
-    console.log(msg)
     socket.broadcast.to(msg.roomName).emit('chat', msg.message)
   })
 }
