@@ -18,6 +18,7 @@ router.get('/add', async function (ctx, next) {
     },
     content: ctx.query.content,
     images: ctx.query.images && ctx.query.images.split(','),
+    group: ctx.query.group && JSON.parse(ctx.query.group)
   })
   ctx.status = 200
   ctx.body = result;

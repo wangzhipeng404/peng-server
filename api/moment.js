@@ -16,7 +16,13 @@ const add = data => {
 const find = (query) => {
   return new Promise((reslove, reject) => {
     Moment
-      .find(query)
+      .find({
+
+        ...query,
+      })
+      .sort({
+        _id: -1,
+      })
       .exec((err, res) => {
         if (err) {
           reslove({status: 'fail', data: err})
