@@ -16,7 +16,7 @@ const bindSocketEvent = function (io) {
       chat(socket)
   });
   io.of('/group').on('connection', function(socket){
-      group(socket);
+      group(socket, io);
   });
 
 }
