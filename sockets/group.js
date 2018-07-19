@@ -6,24 +6,25 @@ const group = async (socket, io) => {
   socket.on('create', data => {
     socket.emit('create success', sessionData)
   })
-  socket.on('join', msg => {
-    if (!socket.rooms[msg]) {
-      socket.join(msg, () => {
+  socket.on('join', rid => {
+    if (!socket.rooms[rid]) {
+      socket.join(rid, () => {
         socket.emit('join result', {
           state: 'success',
-          roomName: msg,
+          roomName: rid,
         })
-        var roster = io.nsps['/group'].adapter.rooms[msg]
-        socket.emit('room notify', `你已经成功进入聊天室，当前在线人数${roster.length}`)
-        socket.broadcast.to(msg).emit('room notify', sessionData.userInfo.nickName + '加入了房间')
+        var roster = io.nsps['/group'].adapter.rooms[rid]
+        socket.emit('room notify' + rid, `你已经成功进入聊天室，当前在线人数${roster.length}`)
+        socket.broadcast.to(rid).emit('room notify' + rid, sessionData.userInfo.nickName + '加入了房间')
       })
     } else {
-      socket.emit('room notify', `你已经成功进入聊天室，当前在线人数9999`)
-      socket.broadcast.to(msg).emit('room notify', sessionData.userInfo.nickName + '加入了房间')
+      var roster = io.nsps['/group'].adapter.rooms[rid]
+      socket.emit('room notify' + rid, `你已经成功进入聊天室，当前在线人数${roster.length}`)
+      socket.broadcast.to(msg).emit('room notify' + rid, sessionData.userInfo.nickName + '加入了房间')
     }
   })
   socket.on('chat', msg => {
-    socket.broadcast.to(msg.roomName).emit('chat', msg.message)
+    socket.broadcast.to(msg.roomName).emit('chat' + msg.roomName, msg.message)
   })
 }
 

@@ -9,7 +9,8 @@ const bindSocketEvent = function (io) {
     if (sessionData) {
       next()
     } else {
-      next(new Error('session not fund'))
+      socket.emit('error', new Error('session not fund'))
+      socket.disconnect(true)
     }
   });
   io.of('/chat').on('connection', function(socket){

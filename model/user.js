@@ -11,7 +11,7 @@ const UserSchema = new Schema({
   language: String,
   gender: Number,
   openid: String,
-  crate_time: {
+  create_time: {
     type: Date,
     default: Date.now,
   },

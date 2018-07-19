@@ -11,4 +11,8 @@ const getToken = () => {
   return uploadToken;
 }
 
-module.exports = { getToken };
+module.exports = {
+  '/qiniu/token': async (ctx, next) => {
+    ctx.body = getToken()
+  }
+ };

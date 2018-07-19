@@ -8,10 +8,7 @@ const session = require('koa-session');
 const logger = require('koa-logger')
 const  mongoose = require('./db/mongoose')
 const index = require('./routes/index')
-const users = require('./routes/users')
-const group = require('./routes/group')
-const moment = require('./routes/moment')
-const qiniu = require('./routes/qiniu')
+const api = require('./routes/api')
 const sessionStore = require('./model/sessionStore');
 const appConfig = require('./appConfig')
 
@@ -56,10 +53,7 @@ app.use(async (ctx, next) => {
 
 // routes
 app.use(index.routes(), index.allowedMethods())
-app.use(users.routes(), users.allowedMethods())
-app.use(group.routes(), group.allowedMethods())
-app.use(moment.routes(), moment.allowedMethods())
-app.use(qiniu.routes(), qiniu.allowedMethods())
+app.use(api.routes(), api.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {

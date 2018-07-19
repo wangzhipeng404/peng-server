@@ -22,7 +22,7 @@ const MomentSchema = new Schema({
     type: Object,
     default: {},
   },
-  crate_time: {
+  create_time: {
     type: Date,
     default: Date.now,
   },

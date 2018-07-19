@@ -1,64 +1,71 @@
 const User = require('../model/user');
-
-const add = (info) => {
-  return new Promise((reslove, reject) => {
-    const user = new User({nickName: info.nickName, openid: info.openid, friends: [], groups: []})
-    user.save((err, res) => {
-      if (err) {
-        reslove({status: 'fail', data: err})
-      } else {
-        reslove({status: 'success', data: res})
-      }
-    })
-  })
-}
-
-const find = (query) => {
-  return new Promise((reslove, reject) => {
-    User
-      .find(
-        {
-          ...query,
-        }
-      )
-      .exec((err, res) => {
-        if (err) {
-          reslove({status: 'fail', data: err})
-        } else {
-          reslove({status: 'success', data: res})
-        }
-      })
-  })
-}
-
-const get = (query) => {
-  return new Promise((reslove, reject) => {
-    User
-      .findOne(
-        {
-          ...query,
-        }
-      )
-      .exec((err, res) => {
-        if (err) {
-          reslove(err)
-        } else {
-          reslove(res)
-        }
-      })
-  })
-}
-
-const update = (id, query) => {
-  return User.update({ _id: id }, { ...query },{
-    upsert: true,
-    safe: true
-  })
-}
+const wechat = require('./wechat')
 
 module.exports = {
-  add,
-  find,
-  get,
-  update,
+  '/user/regiester': async (ctx, next) => {
+    const { nickName, openid } = ctx.query
+    const user = new User({ nickName, openid, friends: [], groups: []})
+    const res = await user.save()
+    ctx.body = res;
+  },
+  '/user/wxlogin': async (ctx, next) => {
+    const data = await wechat.getOpenId(ctx.query.code)
+    if (!data.errcode) {
+      const { openid } = data
+      let user = await User.findOne({ openid })
+      if (!user) {
+        user = new User({ nickName: '', openid, friends: [], groups: []}).save()
+      }
+      ctx.session.userInfo = user
+      ctx.body = user
+    } else {
+      ctx.status = 400
+      ctx.body = {
+        error: data.errmsg
+      }
+    }
+  },
+  '/user/update': async (ctx, next) => {
+    if (ctx.session.userInfo._id) {
+      let user = await User.update(
+        {   _id: ctx.session.userInfo._id },
+        { ...ctx.query },
+        { upsert: true, safe: true }
+      ).exec()
+      if (user.ok) {
+        user = await User.findById(ctx.session.userInfo._id).exec()
+        ctx.session.userInfo = user
+        ctx.body = user
+      } else {
+        ctx.status = 400
+        ctx.body = user
+      }
+    } else {
+      ctx.status = 401
+      ctx.body = {
+        error: '未登录'
+      }
+    }
+  },
+  '/user/getSelf': async (ctx, next) => {
+    const user = ctx.session.userInfo
+    if (user) {
+      ctx.body = user
+    } else {
+      ctx.status = 401
+      ctx.body = {
+        error: '未登录'
+      }
+    }
+  },
+  '/user/find': async (ctx, next) => {
+    const list = await User.find(ctx.query).exec()
+    const total = await User.where(ctx.query).count()
+    ctx.body = {
+      total,
+      list,
+    }
+  },
 }
+
+
