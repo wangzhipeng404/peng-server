@@ -7,7 +7,7 @@ const GroupSchema = new Schema({
   avatarUrl: String,
   intro: String,
   creator: String,
-  crate_time: {
+  create_time: {
     type: Date,
     default: Date.now,
   },
