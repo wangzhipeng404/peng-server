@@ -21,7 +21,7 @@ const group = async (socket, io) => {
     } else {
       var roster = io.nsps['/group'].adapter.rooms[rid]
       socket.emit('room notify' + rid, `你已经成功进入聊天室，当前在线人数${roster.length}`)
-      socket.broadcast.to(msg).emit('room notify' + rid, sessionData.userInfo.nickName + '加入了房间')
+      socket.broadcast.to(rid).emit('room notify' + rid, sessionData.userInfo.nickName + '加入了房间')
     }
   })
   socket.on('chat', msg => {
