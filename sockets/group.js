@@ -25,7 +25,7 @@ const group = async (socket, io) => {
     }
   })
   socket.on('chat', msg => {
-    if (/^@tulin\s{1}/g.test(msg.message)) {
+    if (/^@tulin\s{1}/g.test(msg.value)) {
       request({
           url: 'http://openapi.tuling123.com/openapi/api/v2',
           method: "POST",
@@ -37,7 +37,7 @@ const group = async (socket, io) => {
             "reqType":0,
             "perception": {
                 "inputText": {
-                    "text": msg.message.replace(/^@tulin\s{1}/, ''),
+                    "text": msg.value.replace(/^@tulin\s{1}/, ''),
                 },
             },
             "userInfo": {
@@ -48,7 +48,10 @@ const group = async (socket, io) => {
       }, function(error, response, body) {
           if (!error && response.statusCode == 200) {
             body.results.forEach(val => {
-              socket.emit('chat' + msg.roomName, val.values.text)
+              socket.emit('chat' + msg.roomName, {
+                type: 'text',
+                value: val.values.text
+              })
             });
           }
       });
@@ -57,14 +60,14 @@ const group = async (socket, io) => {
         'chat' + msg.roomName,
         {
           type: msg.type,
-          value: msg.message
+          value: msg.value
         }
       )
       socket.broadcast.to(msg.roomName).emit(
         'chat' + msg.roomName,
         {
           type: msg.type,
-          value: msg.message
+          value: msg.value
         }
       )
     }
