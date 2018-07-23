@@ -53,7 +53,20 @@ const group = async (socket, io) => {
           }
       });
     } else {
-      socket.broadcast.to(msg.roomName).emit('chat' + msg.roomName, msg.message)
+      socket.emit(
+        'chat' + msg.roomName,
+        {
+          type: msg.type,
+          value: msg.message
+        }
+      )
+      socket.broadcast.to(msg.roomName).emit(
+        'chat' + msg.roomName,
+        {
+          type: msg.type,
+          value: msg.message
+        }
+      )
     }
   })
 }
