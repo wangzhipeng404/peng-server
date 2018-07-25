@@ -28,7 +28,7 @@ module.exports = {
     const user = ctx.session.userInfo
     query.members = user._id.toString()
     const list = await Group.find(query).sort({ _id: -1 }).exec()
-    const total = await Group.where(query).countDocuments()
+    const total = await Group.count(query).count()
     ctx.body = {
       total,
       list,

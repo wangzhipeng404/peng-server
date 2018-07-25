@@ -54,18 +54,9 @@ app.use(async (ctx, next) => {
 app.use((ctx, next) => {
   return next().catch(err => {
     let code = 500
-    let msg = 'unknown error'
-    if (err instanceof CustomError || err instanceof HttpError) {
-      const res = err.getCodeMsg()
-      ctx.status = err instanceof HttpError ? res.code : 200
-      code = res.code
-      msg = res.msg
-    } else {
-      console.error('err', err)
-    }
     ctx.body = {
       code,
-      msg
+      err
     }
   })
 })

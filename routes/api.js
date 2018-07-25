@@ -12,7 +12,7 @@ const apis = {
   ...moment,
 }
 for(const api in apis) {
-  router.get(api, apis[api])
+  router.all(api, apis[api])
 }
 
 
