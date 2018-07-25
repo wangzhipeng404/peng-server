@@ -24,12 +24,39 @@ module.exports = {
     }
   },
   '/moment/find': async (ctx, next) => {
-    const list = await Moment.find(ctx.query).sort({ _id: -1 }).exec()
-    const total = await Moment.where(ctx.query).countDocuments()
+    let query = {}
+    if (ctx.method === 'POST') {
+      query = ctx.body
+    } else {
+      query = ctx.query
+    }
+    const {
+      filters = {},
+      sort = { _id: -1 },
+      page = 1,
+      limit = 10
+    } = query;
+    const list = await Moment
+      .find(JSON.parse(filters))
+      .sort(sort)
+      .skip((page - 1) * limit)
+      .limit(parseInt(limit, 10))
+      .exec()
+    const total = await Moment.where(JSON.parse(filters)).count()
     ctx.body = {
       total,
       list,
     }
+  },
+  '/moment/all': async (ctx, next) => {
+    const data = await Moment.where({ create_time: new Date() }).updateMany({
+      create_time: new Date(2018, 6, 20),
+      "group": {
+        "_id": "5b4db61d987b7511965a8c42",
+        "nickName": "世界频道"
+      },
+    })
+    ctx.body = data
   },
   '/moment/get': async (ctx, next) => {
     if (ctx.query.id.match(/^[0-9a-fA-F]{24}$/)) {
