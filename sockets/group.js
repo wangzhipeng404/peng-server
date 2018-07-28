@@ -37,7 +37,7 @@ const group = async (socket, io) => {
             "reqType":0,
             "perception": {
                 "inputText": {
-                    "text": msg.value.replace(/^@tulin\s{1}/, ''),
+                    "text": msg.value.replace(/^@groop\s{1}/, ''),
                 },
             },
             "userInfo": {
