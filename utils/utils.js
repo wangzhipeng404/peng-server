@@ -18,7 +18,11 @@ function getCookie(cookies, name) {
 function getSessionData (conn) {
   const cookies = conn.handshake.query.cookie
   const koaSessionId = getCookie(cookies, 'koa:sess')
-  return SessionStore.get(koaSessionId)
+  if (koaSessionId) {
+    return SessionStore.get(koaSessionId)
+  } else {
+    return null
+  }
 }
 
 module.exports = {
