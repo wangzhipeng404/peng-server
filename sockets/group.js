@@ -27,7 +27,7 @@ const group = async (socket, io) => {
           from: {
             nickName: 'groop',
             _id: 'groop',
-            avatarUrl: 'https://wx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEK1HibIVVSzUxz83PiauZKcRVv0mJMmBcnQxbbjaXp76d0KNuPMrhwFUhsIf2A0FYcacj14dd9840Tg/132'
+            avatarUrl: 'http://pbmtf3or1.bkt.clouddn.com/groop_logo.png'
           }
         })
         socket.broadcast.to(rid).emit('room notify' + rid, sessionData.userInfo.nickName + '加入了房间')
@@ -79,7 +79,7 @@ const group = async (socket, io) => {
                 from: {
                   nickName: 'groop',
                   _id: 'groop',
-                  avatarUrl: 'https://wx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEK1HibIVVSzUxz83PiauZKcRVv0mJMmBcnQxbbjaXp76d0KNuPMrhwFUhsIf2A0FYcacj14dd9840Tg/132'
+                  avatarUrl: 'http://pbmtf3or1.bkt.clouddn.com/groop_logo.png'
                 }
               })
             });
