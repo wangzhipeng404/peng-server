@@ -55,14 +55,13 @@ module.exports = {
   '/group/join': async (ctx, next) => {
     const { id } = ctx.query
     const user = ctx.session.userInfo
-    console.log(user._id.toString())
     if (!user) {
       ctx.status = 401
       ctx.body = '未登录'
     } else {
       const uid = user._id.toString()
       if (id.match(/^[0-9a-fA-F]{24}$/)) {
-        let group = Group.findById(id)
+        let group = await Group.findById(id)
         if (group.members.indexOf(uid) == -1) {
           group = await Group.findByIdAndUpdate(
             id,
@@ -73,6 +72,9 @@ module.exports = {
           }
         }
         ctx.body = group
+      } else {
+        ctx.status = 400
+        ctx.body = 'id不符合规则'
       }
     }
   }
