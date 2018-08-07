@@ -77,6 +77,30 @@ module.exports = {
         ctx.body = 'id不符合规则'
       }
     }
+  },
+  '/group/leave': async (ctx, next) => {
+    const { id } = ctx.query
+    const user = ctx.session.userInfo
+    if (!user) {
+      ctx.status = 401
+      ctx.body = '未登录'
+    } else {
+      const uid = user._id.toString()
+      if (id.match(/^[0-9a-fA-F]{24}$/)) {
+        let group = await Group.findById(id)
+        group = await Group.findByIdAndUpdate(
+          id,
+          { '$pull': { members: uid } },
+        )
+        if (group.ok) {
+          group = Group.findById(id)
+        }
+        ctx.body = group
+      } else {
+        ctx.status = 400
+        ctx.body = 'id不符合规则'
+      }
+    }
   }
 }
 
