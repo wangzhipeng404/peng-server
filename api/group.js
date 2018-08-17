@@ -20,6 +20,23 @@ module.exports = {
       }
     }
   },
+  '/group/update': async (ctx, next) => {
+    if (ctx.session.userInfo._id) {
+      let group = await Group.findByIdAndUpdate(
+        ctx.query._id,
+        {
+          intro: ctx.query.intro,
+          avatarUrl: ctx.query.avatarUrl,
+        },
+      )
+      ctx.body = group
+    } else {
+      ctx.status = 401
+      ctx.body = {
+        error: '未登录'
+      }
+    }
+  },
   '/group/find': async (ctx, next) => {
     let query = { ...ctx.query };
     if (query.__code__) {
