@@ -26,6 +26,10 @@ const MomentSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  comment: {
+    type: Number,
+    default: 0,
+  },
 });
 
 module.exports = mongoose.model('Moment', MomentSchema);

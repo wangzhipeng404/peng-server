@@ -59,8 +59,9 @@ module.exports = {
     }
   },
   '/user/find': async (ctx, next) => {
-    const list = await User.find(ctx.query).exec()
-    const total = await User.where(ctx.query).count()
+    const filters = JSON.parse(ctx.query.filters)
+    const list = await User.find(filters).exec()
+    const total = await User.where(filters).count()
     ctx.body = {
       total,
       list,

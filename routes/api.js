@@ -4,6 +4,7 @@ const qiniu = require('../api/qiniu')
 const group = require('../api/group')
 const moment = require('../api/moment')
 const tulin = require('../api/tulin')
+const comment = require('../api/comment')
 
 router.prefix('/api')
 const apis = {
@@ -12,6 +13,7 @@ const apis = {
   ...group,
   ...moment,
   ...tulin,
+  ...comment,
 }
 for(const api in apis) {
   router.all(api, apis[api])
