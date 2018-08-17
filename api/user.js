@@ -14,7 +14,7 @@ module.exports = {
       const { openid } = data
       let user = await User.findOne({ openid })
       if (!user) {
-        user = new User({ nickName: '', openid, friends: [], groups: []}).save()
+        user = await new User({ nickName: '', openid, friends: [], groups: []}).save()
       }
       ctx.session.userInfo = user
       ctx.body = user
