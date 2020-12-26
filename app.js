@@ -11,6 +11,12 @@ const index = require('./routes/index')
 const api = require('./routes/api')
 const sessionStore = require('./model/sessionStore');
 const appConfig = require('./appConfig')
+const r1024 = require('./routes/1024')
+const wuXianHome = require('./routes/wuXianHome')
+const bcy = require('./routes/bcy')
+const meituri = require('./routes/meituri')
+const routerProxy = require('./routes/proxy')
+
 
 
 
@@ -63,6 +69,11 @@ app.use((ctx, next) => {
 // routes
 app.use(index.routes(), index.allowedMethods())
 app.use(api.routes(), api.allowedMethods())
+app.use(r1024.routes(), r1024.allowedMethods())
+app.use(wuXianHome.routes(), wuXianHome.allowedMethods())
+app.use(bcy.routes(), bcy.allowedMethods())
+app.use(routerProxy.routes(), routerProxy.allowedMethods())
+app.use(meituri.routes(), meituri.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {

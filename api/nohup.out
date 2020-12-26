@@ -1,0 +1,98 @@
+
+> peng-server@0.1.0 start /root/peng-server
+> node bin/run
+
+3babel presets path = /root/peng-server/node_modules/runkoa/node_modules
+/root/peng-server/node_modules/babel-core/lib/transformation/file/index.js:558
+      throw err;
+      ^
+
+SyntaxError: /root/peng-server/api/moment.js: Unexpected token, expected , (52:69)
+  50 |   },
+  51 |   '/moment/all': async (ctx, next) => {
+> 52 |     const data = await Moment.where({ crate_time: { $lt: new Date() }).updateMany({
+     |                                                                      ^
+  53 |       create_time: new Date(2018, 6, 20),
+  54 |       "group": {
+  55 |         "_id": "5b4db61d987b7511965a8c42",
+    at Parser.pp$5.raise (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp.expect (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:1749:33)
+    at Parser.pp$3.parseObj (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3344:19)
+    at Parser.pp$3.parseExprListItem (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:4312:16)
+    at Parser.pp$3.parseCallExpressionArguments (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3573:20)
+    at Parser.pp$3.parseSubscripts (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3533:31)
+    at Parser.pp$3.parseExprSubscripts (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3504:15)
+    at Parser.pp$3.parseMaybeUnary (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseAwait (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:4365:24)
+    at Parser.pp$3.parseExprAtom (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3652:23)
+    at Parser.pp$3.parseExprSubscripts (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3344:19)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! peng-server@0.1.0 start: `node bin/run`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the peng-server@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2018-07-25T09_07_22_672Z-debug.log
+
+> peng-server@0.1.0 start /root/peng-server
+> node bin/run
+
+3babel presets path = /root/peng-server/node_modules/runkoa/node_modules
+/root/peng-server/node_modules/babel-core/lib/transformation/file/index.js:558
+      throw err;
+      ^
+
+SyntaxError: /root/peng-server/api/moment.js: Unexpected token, expected , (52:64)
+  50 |   },
+  51 |   '/moment/all': async (ctx, next) => {
+> 52 |     const data = await Moment.where({ crate_time: { $not: null }).updateMany({
+     |                                                                 ^
+  53 |       create_time: new Date(2018, 6, 20),
+  54 |       "group": {
+  55 |         "_id": "5b4db61d987b7511965a8c42",
+    at Parser.pp$5.raise (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp.expect (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:1749:33)
+    at Parser.pp$3.parseObj (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3344:19)
+    at Parser.pp$3.parseExprListItem (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:4312:16)
+    at Parser.pp$3.parseCallExpressionArguments (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3573:20)
+    at Parser.pp$3.parseSubscripts (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3533:31)
+    at Parser.pp$3.parseExprSubscripts (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3504:15)
+    at Parser.pp$3.parseMaybeUnary (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseAwait (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:4365:24)
+    at Parser.pp$3.parseExprAtom (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3652:23)
+    at Parser.pp$3.parseExprSubscripts (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/root/peng-server/node_modules/babel-core/node_modules/babylon/lib/index.js:3344:19)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! peng-server@0.1.0 start: `node bin/run`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the peng-server@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2018-07-25T09_18_52_787Z-debug.log
