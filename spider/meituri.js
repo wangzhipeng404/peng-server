@@ -8,7 +8,6 @@ const headers = {
 }
 
 function proxyRequest (url) {
-  console.log(url)
   return rp({
     url: url,
     headers: headers,
@@ -18,7 +17,7 @@ function proxyRequest (url) {
     // return iconv.decode(data, 'gb2312')
   }).catch(e => {
     console.log('出错了')
-    console.log(e)
+    // console.log(e)
   })
 }
 

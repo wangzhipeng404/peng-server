@@ -96,13 +96,12 @@ function getMagazineList(html) {
   return new Promise((resolve, reject) => {
     const articles = [];
     var $ = cheerio.load(html);
-    $('.cart-list').each(function () {
+    $('.post-list-item').each(function () {
       const $this = $(this)
-      const $a = $this.find('.entry-title').find('a')
+      const $a = $this.find('h2').find('a')
       const link = $a.attr('href')
       const title = $a.text()
-      let pic = $this.find('.preview ').css('background-image')
-      pic = pic.replace('url(','').replace(')','').replace(/\'/gi, '');
+      let pic = $this.find('.post-thumb').data('src')
       const tags = []
       $this.find('.list-category').each(function () {
         const href = $(this).attr('href')
@@ -115,10 +114,10 @@ function getMagazineList(html) {
         title: title,
         link: link,
         pic: pic,
-        label: $this.find('header').find('.label').text(),
+        label: $this.find('.post-list-cat').find('.post-list-cat-item').text().trim(),
         tags: tags,
-        note: $this.find('.post-ex').text(),
-        time: $this.find('.timeago').data('timeago').slice(0, 19),
+        note: $this.find('.post-excerpt').text(),
+        time: $this.find('.b2timeago').attr('datetime').slice(0, 19),
       })
     })
     const nextPage = $('.pagination').find('.next-page').text()
@@ -138,7 +137,7 @@ function getMagazineContent(url) {
       var $ = cheerio.load(html);
       const pagination = []
       const content = []
-      const $content = $('#content-innerText')
+      const $content = $('.entry-content')
       $content.find('p').each(function () {
         const $this = $(this)
         const $img = $this.find('img')
