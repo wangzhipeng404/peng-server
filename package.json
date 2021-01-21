@@ -32,7 +32,7 @@
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
     "runkoa": "^1.5.9",
-    "socket.io": "^2.1.1",
+    "socket.io": "^2.4.0",
     "socks5-http-client": "^1.0.4"
   },
   "devDependencies": {
